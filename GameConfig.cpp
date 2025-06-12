@@ -1,5 +1,6 @@
 #include "GameConfig.h"
 
+
 // Конфигурации уровней
 const LevelConfig LEVELS[MAX_LEVEL] = {
     {3, 8, 40.f, 1.5f},   // Уровень 1

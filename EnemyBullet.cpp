@@ -1,6 +1,7 @@
 #include "EnemyBullet.h"
 #include "GameConfig.h"
 
+
 EnemyBullet::EnemyBullet(float x, float y) {
     shape.setSize({ 6, 15 });
     shape.setFillColor(sf::Color::Yellow);

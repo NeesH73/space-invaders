@@ -1,5 +1,6 @@
 #include "Player.h"
 
+
 Player::Player() {
     ship.setSize({ 50, 20 });
     ship.setFillColor(sf::Color::Green);
