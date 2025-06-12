@@ -1,7 +1,8 @@
 #include "Bullet.h"
+#include "GameConfig.h"
 
 Bullet::Bullet(float x, float y) {
-    shape.setSize(sf::Vector2f(6, 15));
+    shape.setSize({ 6, 15 });
     shape.setFillColor(sf::Color::Magenta);
     shape.setPosition(x, y);
     active = true;
@@ -9,7 +10,7 @@ Bullet::Bullet(float x, float y) {
 
 void Bullet::update(float dt) {
     if (active) {
-        float y = shape.getPosition().y - 500.f * dt;
+        float y = shape.getPosition().y - BULLET_SPEED * dt;
         shape.setPosition(shape.getPosition().x, y);
 
         if (y < 0) active = false;

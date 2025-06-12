@@ -1,9 +1,12 @@
 #pragma once
 #include <SFML/Graphics.hpp>
+#include "GameConfig.h"
 
 struct Player {
     sf::RectangleShape ship;
-    float speed = 300.f;
+    float speed = PLAYER_SPEED;
 
     Player();
+    void moveLeft(float dt);
+    void moveRight(float dt);
 };
